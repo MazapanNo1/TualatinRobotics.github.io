@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+@import 'fixed';
+
+$NotoSerif:'Noto Serif', serif;
+$Roboto:'Roboto', sans-serif;
+
+
+#features{
+    color: #241F1E;
+}
+
+.primary-color{
+    background-color: #241F1E;
+    color: white;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: $Roboto;
+    background-color: #241F1E;
+    color: #ffffff;
+}
+
+/*---navigation---*/
+
+.navbar{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    background: rgba(0,0,0,0.6)!important;
+}
+
+.navbar-brand{
+    img{
+        height: 3rem;
+    }
+}
+
+.navbar-nav{
+    li{
+        padding-right: .7rem;
+    }
+
+}
+
+a.nav-link:hover{
+    
+    border-bottom: 1px solid #C60117;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #C60117;
+}
+
+/* landing page */
+.home-inner{
+    background-image: url('../Assets/HeroBannerImage.jpg');
+
+}
+
+.caption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 45%;
+    z-index: white;
+    text-transform: uppercase;
+
+    h1{
+        font-size: 3.8rem;
+        font-weight: 400;
+        letter-spacing: .2rem;
+        text-shadow: .1rem .1rem .8rem black;
+        padding-bottom: 1rem;
+    }
+    h3{
+        font-size: 2rem;
+        font-weight: 300;
+        text-shadow: .1rem .1rem .5rem black;
+        padding-bottom:  1.6rem;
+    }
+}
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.btn-lg {
+    --borderWidth: 5;
+    --boxShadowDepth: 8;
+    --buttonColor: rgb(255, 255, 255);
+    --fontSize: 1;
+    --horizontalPadding: 16;
+    --verticalPadding: 8;
+  
+    background: transparent;
+    border: calc(var(--borderWidth) * 1px) solid var(--buttonColor);
+    box-shadow: calc(var(--boxShadowDepth) * 1px) calc(var(--boxShadowDepth) * 1px) 0 rgb(153, 31, 31);
+    color: var(--buttonColor);
+    cursor: pointer;
+    font-size: calc(var(--fontSize) * 1rem);
+    font-weight: 300;
+    outline: transparent;
+    padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
+    transition: box-shadow 0.15s ease;
+}
+  
+.btn-lg:hover {
+box-shadow: calc(var(--boxShadowDepth) / 2 * 1px) calc(var(--boxShadowDepth) / 2 * 1px) 0 rgb(153, 31, 31);
+}
+
+.btn-lg:active {
+box-shadow: rgb(26, 26, 26);
+}
+
+/* JumboTron Section */
+
+.jumbotron{
+    background-color: rgb(216, 216, 216);
+}
+
+.center-align-text{
+    text-align: center;
+    width: 60%;
+}
+
+.team-bio-text{
+    font-weight: 400;
+}
+
+.team-bio-text-2{
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.dark-text{
+    color: #241f1e ;
+}
+
+.dark-text-main{
+    color: #241f1e;
+    font-weight: 400;
+}
+
+.dark-text-fade{
+    color: #241f1e7c !important;
+    font-weight: 300;
+}
