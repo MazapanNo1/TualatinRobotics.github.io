@@ -4,16 +4,6 @@
 $NotoSerif:'Noto Serif', serif;
 $Roboto:'Roboto', sans-serif;
 
-
-#features{
-    color: #241F1E;
-}
-
-.primary-color{
-    background-color: #241F1E;
-    color: white;
-}
-
 body{
     overflow-x: hidden;
     font-family: $Roboto;
@@ -26,7 +16,7 @@ body{
 .navbar{
     text-transform: uppercase;
     font-weight: 300;
-    font-size: .7rem;
+    font-size: .8rem;
     letter-spacing: .1rem;
     background: rgba(0,0,0,0.6)!important;
 }
@@ -62,97 +52,101 @@ a.nav-link:hover{
 /* landing page */
 .home-inner{
     background-image: url('../Assets/HeroBannerImage.jpg');
+}
 
+.graylayer{
+    backdrop-filter: blur(10px);
+}
+
+.center-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .caption{
     width: 100%;
-    height: 100%;
+    height: 50%;
     position: absolute;
-    top: 45%;
+    top: 35%;
     z-index: white;
     text-transform: uppercase;
 
-    h1{
-        font-size: 3.8rem;
-        font-weight: 400;
+    img{
         letter-spacing: .2rem;
-        text-shadow: .1rem .1rem .8rem black;
-        padding-bottom: 1rem;
+        text-shadow: .1rem .1rem .8rem #241F1E;
+        padding-bottom: 1.3rem;
     }
+
     h3{
         font-size: 2rem;
         font-weight: 300;
-        text-shadow: .1rem .1rem .5rem black;
+        font-kerning: 50;
+        text-shadow: .1rem .1rem .5rem #241F1E;
         padding-bottom:  1.6rem;
     }
 }
-.btn-lg{
-    border-width: medium;
+
+#banner{
+    background: #883636 !important;
+}
+
+.textbox{
+    display:flex;
+}
+
+.img-text{
+    .info-text{
+        img{
+            width: 100%;
+            height: auto;
+        }
+        h5{
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.25);
+        }
+        p{
+            font-size: 16px;
+            margin-top: 70px;
+            font-weight: 300;
+        }
+        .textbox{
+            h2{
+                font-size: 65;
+                font-weight: 300;
+                border-bottom: 2px solid #b4b4b4;
+            }
+       }
+    }
+}
+
+.jumbotron#jumbotron-1{
+    background-color: #dfdfdf;
     border-radius: 0;
-    padding: .6rem 1.3rem;
-    font-size: 1.1rem;
-    font-weight: 300;
+    width: 100%;
+    height: 80vh;
 }
 
-.btn-lg {
-    --borderWidth: 5;
-    --boxShadowDepth: 8;
-    --buttonColor: rgb(255, 255, 255);
-    --fontSize: 1;
-    --horizontalPadding: 16;
-    --verticalPadding: 8;
-  
-    background: transparent;
-    border: calc(var(--borderWidth) * 1px) solid var(--buttonColor);
-    box-shadow: calc(var(--boxShadowDepth) * 1px) calc(var(--boxShadowDepth) * 1px) 0 rgb(153, 31, 31);
-    color: var(--buttonColor);
-    cursor: pointer;
-    font-size: calc(var(--fontSize) * 1rem);
-    font-weight: 300;
-    outline: transparent;
-    padding: calc(var(--verticalPadding) * 1px) calc(var(--horizontalPadding) * 1px);
-    transition: box-shadow 0.15s ease;
-}
-  
-.btn-lg:hover {
-box-shadow: calc(var(--boxShadowDepth) / 2 * 1px) calc(var(--boxShadowDepth) / 2 * 1px) 0 rgb(153, 31, 31);
-}
-
-.btn-lg:active {
-box-shadow: rgb(26, 26, 26);
-}
-
-/* JumboTron Section */
-
-.jumbotron{
-    background-color: rgb(216, 216, 216);
-}
-
-.center-align-text{
-    text-align: center;
-    width: 60%;
-}
-
-.team-bio-text{
-    font-weight: 400;
-}
-
-.team-bio-text-2{
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.575);
+.jumbotron#jumbotron-2{
+    background-color: #493f3d;
+    border-radius: 0;
 }
 
 .dark-text{
-    color: #241f1e ;
-}
-
-.dark-text-main{
     color: #241f1e;
-    font-weight: 400;
 }
 
-.dark-text-fade{
-    color: #241f1e7c !important;
-    font-weight: 300;
+.dark-mode{
+    .textbox{
+        h2{
+            border-bottom: 2px solid #241f1e !important; 
+        }
+    }
+}
+
+.main-text{
+    h1{
+        font-weight: 400;
+        border-bottom: 2px solid #707070;
+    }
 }
